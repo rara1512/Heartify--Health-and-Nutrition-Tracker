@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heartify </title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/axios/dist/axios.standalone.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/rollups/hmac-sha256.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/rollups/sha256.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/components/hmac.js"></script>
+    <script type="text/javascript" src="lib/CryptoJS/components/enc-base64.js"></script>
+    <script type="text/javascript" src="lib/url-template/url-template.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/sigV4Client.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/apiGatewayClient.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/simpleHttpClient.js"></script>
+    <script type="text/javascript" src="lib/apiGatewayCore/utils.js"></script>
+    <link rel="stylesheet" href="css/homestyle.css">
+    <script type="text/javascript" src="apigClient.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> Heartify. </a>
+
+    <nav class="navbar">
+        <a href="#services">services</a>
+        <a href="#doctors">members</a>
+        <a href="https://heartify.auth.us-east-1.amazoncognito.com/login?client_id=61pld0ditfs0el2k4knvfmncl8&response_type=token&scope=aws.cognito.signin.user.admin+email+openid+phone+profile&redirect_uri=https://heartify-ui.s3.amazonaws.com/iindex.html">login</a>
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="image">
+        <img src="image/home-img.svg" alt="">
+    </div>
+
+    <div class="content">
+        <h3>stay safe, stay healthy</h3>
+        <p>Use our tools To predict Heart Disease and take some foods tips based on your requirements!</p>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- services section starts  -->
+
+<section class="services" id="services">
+
+    <h1 class="heading"> our <span>services</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-calculator"></i>
+            <h3>Prediction</h3>
+            <p>Enter values to use our state of the art ML model to predict Heart Disease.</p>
+            <button class="btn" onclick="check()" id="click"> Predict Now <span class="fas fa-chevron-right"></span> </button>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+            <h3>Nutrition & Diet</h3>
+            <p>Let us help you decide what to eat. Healthy and Delicious.</p>
+            <button class="btn" onclick="checko()"> Suggest Now <span class="fas fa-chevron-right"></span> </button>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- services section ends -->
+
+<!-- doctors section starts  -->
+
+<section class="doctors" id="doctors">
+
+    <h1 class="heading"> our <span>Contributors</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="image/doc-1.jpg" alt="">
+            <h3>Himanshu Kumar</h3>
+            <span>Group Member</span>
+            <div class="share">
+                <a href="https://www.facebook.com/profile.php?id=100000993888467" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/Himanshu_z1" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/__himanshu23/" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/in/himanshu-kumar-71099a117/" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/doc-2.jpeg" alt="">
+            <h3>Rahul Ramaswamy</h3>
+            <span>Group Member</span>
+            <div class="share">
+                <a href="https://www.facebook.com/rahulrama1512" class="fab fa-facebook-f"></a>
+                <a href="https://twitter.com/rahulrama1512" class="fab fa-twitter"></a>
+                <a href="https://www.instagram.com/rahul__ramaswamy/" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/in/rahul-ramaswamy1/" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="image/aak.jpeg" alt="">
+            <h3>Aakash Shetty</h3>
+            <span>Group Member</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>
